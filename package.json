@@ -4,12 +4,11 @@
   "description": "Helpers to work with Adobe Commerce",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.50.0"
+    "vscode": "^1.92.0"
   },
   "activationEvents": [
     "onLanguage:php",
-    "onLanguage:xml",
-    "onCommand:adobeCommerceTools.createAdobeCommerceExtension"
+    "onLanguage:xml"
 ],
   "main": "./out/extension.js",
   "contributes": {
@@ -45,5 +44,9 @@
     "@types/vscode": "^1.92.0",
     "typescript": "^5.5.4",
     "vscode": "^1.1.37"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bgkavinga/adobe-commerce-tools.git"
   }
 }
