@@ -1,0 +1,43 @@
+{
+  "name": "adobe-commerce-tools",
+  "displayName": "Adobe Commerce Tools",
+  "description": "Helpers to work with Adobe Commerce",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "activationEvents": [
+    "onLanguage:php",
+    "onCommand:adobeCommerceTools.createAdobeCommerceExtension"
+],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "adobeCommerceTools.navigate",
+        "title": "Navigate to PHP Class"
+    },
+    {
+        "command": "adobeCommerceTools.createAdobeCommerceExtension",
+        "title": "Create Adobe Commerce Extension"
+    }
+    ],
+    "languages": [
+      {
+          "id": "php",
+          "extensions": [".php"],
+          "aliases": ["PHP", "php"]
+      }
+  ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm compile",
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "@types/vscode": "^1.92.0",
+    "typescript": "^5.5.4",
+    "vscode": "^1.1.37"
+  }
+}
