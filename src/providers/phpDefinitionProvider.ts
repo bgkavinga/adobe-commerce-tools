@@ -1,12 +1,13 @@
 import * as vscode from 'vscode';
 import { findPhpFile } from '../utils/fileUtils';
+import { outputChannel } from '../logger';
 
 export function registerPhpDefinitionProvider(context: vscode.ExtensionContext) {
-    const definitionProvider = vscode.languages.registerDefinitionProvider('php', {
+    const definitionProvider = vscode.languages.registerDefinitionProvider({ scheme: 'file', language: 'php' }, {
         provideDefinition(document, position, token) {
             const range = document.getWordRangeAtPosition(position);
             const word = document.getText(range);
-
+            outputChannel.appendLine(`Word under cursor: ${word}`);
             if (word) {
                 const workspaceFolders = vscode.workspace.workspaceFolders;
                 if (workspaceFolders) {

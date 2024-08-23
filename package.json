@@ -8,6 +8,7 @@
   },
   "activationEvents": [
     "onLanguage:php",
+    "onLanguage:xml",
     "onCommand:adobeCommerceTools.createAdobeCommerceExtension"
 ],
   "main": "./out/extension.js",
@@ -27,6 +28,11 @@
           "id": "php",
           "extensions": [".php"],
           "aliases": ["PHP", "php"]
+      },
+      {
+        "id": "xml",
+        "extensions": [".xml"],
+        "aliases": ["XML", "xml"]
       }
   ]
   },

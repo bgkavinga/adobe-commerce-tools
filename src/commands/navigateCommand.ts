@@ -25,8 +25,6 @@ export function registerNavigateCommand(context: vscode.ExtensionContext) {
                     vscode.window.showInformationMessage(`PHP file for class ${word} not found.`);
                 }
             }
-        } else {
-            vscode.window.showInformationMessage(`PHP file for class not found.`);
         }
     });
 
