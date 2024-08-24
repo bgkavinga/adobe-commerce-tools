@@ -17,11 +17,15 @@
     "commands": [
       {
         "command": "adobeCommerceTools.createAdobeCommerceExtension",
-        "title": "Create Adobe Commerce Extension"
+        "title": "AC: Create Extension"
       },
       {
         "command": "adobeCommerceTools.createNote",
-        "title": "Create Adobe Commerce Note"
+        "title": "AC: Create Note"
+      },
+      {
+        "command": "adobeCommerceTools.urlDecode",
+        "title": "AC: URL Decode Selected Text"
       }
     ],
     "languages": [
