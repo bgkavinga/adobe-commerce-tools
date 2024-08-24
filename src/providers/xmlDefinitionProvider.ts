@@ -1,7 +1,6 @@
 import * as vscode from 'vscode';
 import * as path from 'path';
 import * as fs from 'fs';
-import { outputChannel } from '../logger';
 
 
 export function registerXmlDefinitionProvider(context: vscode.ExtensionContext) {

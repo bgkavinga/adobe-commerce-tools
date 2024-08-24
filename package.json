@@ -2,38 +2,50 @@
   "name": "adobe-commerce-tools",
   "displayName": "Adobe Commerce Tools",
   "description": "Helpers to work with Adobe Commerce",
-  "version": "0.0.1",
+  "version": "1.0.1",
+  "publisher": "kavingas",
   "engines": {
     "vscode": "^1.92.0"
   },
   "activationEvents": [
     "onLanguage:php",
     "onLanguage:xml"
-],
+  ],
   "main": "./out/extension.js",
+  "icon": "images/icon.png",
   "contributes": {
     "commands": [
       {
-        "command": "adobeCommerceTools.navigate",
-        "title": "Navigate to PHP Class"
-    },
-    {
         "command": "adobeCommerceTools.createAdobeCommerceExtension",
         "title": "Create Adobe Commerce Extension"
-    }
+      },
+      {
+        "command": "adobeCommerceTools.createNote",
+        "title": "Create Adobe Commerce Note"
+      }
     ],
     "languages": [
       {
-          "id": "php",
-          "extensions": [".php"],
-          "aliases": ["PHP", "php"]
+        "id": "php",
+        "extensions": [
+          ".php"
+        ],
+        "aliases": [
+          "PHP",
+          "php"
+        ]
       },
       {
         "id": "xml",
-        "extensions": [".xml"],
-        "aliases": ["XML", "xml"]
+        "extensions": [
+          ".xml"
+        ],
+        "aliases": [
+          "XML",
+          "xml"
+        ]
       }
-  ]
+    ]
   },
   "scripts": {
     "vscode:prepublish": "pnpm compile",
@@ -43,7 +55,7 @@
     "@types/node": "^22.5.0",
     "@types/vscode": "^1.92.0",
     "typescript": "^5.5.4",
-    "vscode": "^1.1.37"
+    "vscode": "link: @types/vscode"
   },
   "repository": {
     "type": "git",

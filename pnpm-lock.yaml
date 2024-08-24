@@ -15,7 +15,7 @@ devDependencies:
     specifier: ^5.5.4
     version: 5.5.4
   vscode:
-    specifier: ^1.1.37
+    specifier: link: @types/vscode
     version: 1.1.37
 
 packages:

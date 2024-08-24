@@ -1,6 +1,5 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { outputChannel } from '../logger';
 
 export function findPhpFile(dir: string, className: string): string | null {
     const files = fs.readdirSync(dir);
